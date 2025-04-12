@@ -1,0 +1,147 @@
+/* hero section  */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+div.transbox {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/herobg.JPG");
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+div.transbox::before {
+  content: "";
+  background-color: rgba(255, 253, 253, 0.25);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+
+}
+
+.hero-box {
+  background-color: #ffffffc6;
+  position: relative;
+  color: #ffffff;
+  font-size: 14rem;
+  line-height: 0.9;
+  width: 50%;
+
+}
+
+.hero-box h5 {
+  /* color: #9b070e; */
+  color: #2B376B;
+  font-weight: 900;
+  text-align: center;
+  font-family: "Jost", sans-serif;
+  text-align: center;
+  margin-top: 30px;
+  
+}
+
+.hero-box h4 {
+  margin: 5%;
+}
+
+.hero-box h4 span {
+  font-family: "DM Serif Text", serif;
+  font-weight: 900;
+  font-size: 40px;
+  margin-left: 38px;
+  color: #9b070e;
+  word-spacing: 5px;
+
+}
+.hero-btn {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hero-btn a {
+  text-decoration: none;
+  color: #2B376B;
+  font-weight: 900;
+  border: 2px solid #2B376B;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* hero section  */
+
+
+
+/* Responsive Layout */
+/* 480 */
+@media (min-width:0px) and (max-width:480px){
+  .hero-box h5{
+    font-size: 18px;
+  }
+  .hero-box h4 span {
+    width: 80%;
+    font-size: 30px;
+    text-align: center;
+    border: 1ox solid black;
+    margin-left: 0px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .hero-btn a{
+    font-size: 15px;
+  }
+  .hero-box {
+    width: 100%;
+  
+  }
+}
+
+@media (min-width:481px) and (max-width:577px){
+  .hero-box h5{
+    font-size: 18px;
+  }
+  .hero-box h4 span {
+    width: 80%;
+    font-size: 30px;
+    text-align: center;
+    border: 1ox solid black;
+    margin-left: 0px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .hero-btn a{
+    font-size: 15px;
+  }
+  .hero-box {
+    width: 100%;
+  
+  }
+}
+
+@media (min-width:577px) and (max-width:768px){
+  .hero-box h5{
+    font-size: 20px;
+  }
+  .hero-box h4 span {
+    width: 80%;
+    font-size: 40px;
+    text-align: center;
+    margin-left: 0px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .hero-btn a{
+    font-size: 18px;
+  }
+  .hero-box {
+    width: 100%;
+  
+  }
+}
+

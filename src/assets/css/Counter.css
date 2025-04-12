@@ -1,0 +1,89 @@
+/* General Counter Styles */
+.count {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.counter-wrapper {
+  position: relative;
+  width: 100%;
+  margin-top: 80px;
+  background-color: #eff1f8;
+  margin-bottom: -120px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 50px 20px;
+}
+
+.counter-wrapper::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.counter-inner {
+  position: relative;
+  z-index: 2;
+}
+
+.counter-item {
+  color: #1f284e;
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.counter-item span {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  /* font-size: 50px; */
+}
+
+/* Responsive Layout */
+
+/* Small Devices (Phones) */
+@media (max-width: 576px) {
+  .counter-item {
+    width: 100%;
+  }
+  .count {
+    font-size: 30px;
+  }
+  .counter-item {
+    padding: 0px;
+    margin-top: 10px;
+    /* border: 1px solid black; */
+  }
+}
+
+/* Medium Devices (Tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .counter-item {
+    width: 50%;
+  }
+  .count {
+    font-size: 35px;
+  }
+  .counter-item {
+    margin-top: 15px;
+  }
+}
+
+/* Large Devices (Laptops) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .counter-item {
+    width: 33%;
+  }
+}
+
+/* Extra Large Devices (Desktops) */
+@media (min-width: 993px) {
+  .counter-item {
+    width: 20%;
+  }
+}

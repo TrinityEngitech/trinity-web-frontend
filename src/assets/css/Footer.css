@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+.footer {
+    /* margin-top: 50px; */
+    background-color: #2B376B;
+    padding: 40px;
+    font-family: "Roboto", sans-serif;
+}
+#footer-bottom{
+    margin-top: 150px;
+}
+.footer li, #Link{
+    list-style: none;
+    color: #fff;
+    font-size: 14PX;
+    padding: 10px;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+}
+.footer li:hover{
+    font-weight: 600;
+}
+.footer h4{
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+    font-family: "DM Serif Text", serif;
+    margin-bottom: 15px;
+}
+.footer p{
+    color: #fff;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+}
+.footer .social{
+    font-size: 18px;
+    /* margin-top: -20px; */
+}
+.footer .social a{
+    color: #2B376B;
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 5px;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.footer .social a:hover{
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+
+/* Responsive Layout */
+/* 480 */
+@media (min-width:0px) and (max-width:480px){
+    .footer h4{
+        margin-top: 30px;
+    }
+}
+
+@media (min-width:481px) and (max-width:577px){
+    .footer h4{
+        margin-top: 30px;
+    }
+}
+
+@media (min-width:577px) and (max-width:768px){
+    .footer h4{
+        margin-top: 30px;
+    }
+}
+
+@media (min-width:769px) and (max-width:992px){
+    .footer h4{
+        margin-top: 30px;
+    }
+}

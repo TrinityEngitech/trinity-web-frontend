@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#contact{
+    background-color:#eff1f8;
+}
+#contact h5{
+    color: #1f284e;
+}
+#contact p{
+    color: rgb(47, 47, 47);
+}
+#contact i{
+    color: #9b070e;
+}
+#iframe{
+    width: 600px;
+    height: 450px;
+}
+#con-btn{
+    background-color:#1f284e ;
+    color: #fff;
+    font-size: 18px;
+    border: 2px solid #1f284e;
+    transition: 1s;
+}
+#con-btn:hover{
+    background-color: transparent;
+    color: #1f284e;
+    border: 2px solid #1f284e;
+}
+
+
