@@ -9,9 +9,9 @@ import { RiArrowRightWideFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
 // img
-import s1 from '../assets/images/s1.jpeg'
+import s1 from '../assets/images/hp1.jpeg'
 import s2 from '../assets/images/hp3.jpeg'
-import s3 from '../assets/images/s3.jpg'
+import s3 from '../assets/images/s3.jpeg'
 import s4 from '../assets/images/s4.jpeg'
 import s5 from '../assets/images/s5.jpeg'
 

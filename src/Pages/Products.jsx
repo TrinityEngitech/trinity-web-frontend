@@ -38,7 +38,7 @@ function Products() {
             >
               <img src={hp1} className="card-img-top" alt="..." />
               <div className="card-body">
-                <h5 className="card-title">LPG / Propane Storage Tank</h5>
+                <h5 className="card-title">LPG / Propane Above Ground Storage Tank</h5>
                 <p className="card-text">
                   These tanks are used in commercial as well as agricultural
                   sectors.

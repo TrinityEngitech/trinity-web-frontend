@@ -17,7 +17,7 @@ import service_bg from "../assets/images/services.png";
 import hp1 from "../assets/images/hp1.jpeg";
 import hp2 from "../assets/images/hp2.jpeg";
 import hp3 from "../assets/images/hp3.jpeg";
-import hp7 from "../assets/images/hp7.jpeg";
+import hp4 from "../assets/images/hp4.jpeg";
 // import we from '../assets/images/we.png'
 // import care from '../assets/images/care.png'
 import wecare from "../assets/images/we-care.png";
@@ -99,7 +99,7 @@ function Home() {
             >
               <img src={hp1} className="card-img-top img-fulid" alt="..." />
               <div className="card-body">
-                <h5 className="card-title">LPG / Propane Storage Tank</h5>
+                <h5 className="card-title">LPG / Propane Above Ground Storage Tank</h5>
                 <p className="card-text">
                   These tanks are used in commercial as well as agricultural
                   sectors.
@@ -145,23 +145,22 @@ function Home() {
               </div>
             </div>
             {/* 4 */}
-            <div
-              className="card text-center"
-              style={{ width: "19rem" }}
-              id="home-product"
-            >
-              <img src={hp7} className="card-img-top img-fulid" alt="..." />
-              <div className="card-body">
-                <h5 className="card-title">Turnkey Project</h5>
-                <p className="card-text">
-                  We Undertake Turnkey Contract For Bulk Installation Of Lpg
-                  Bottling Plants For Filling Lpg Cylinders.
-                </p>
-                <Link href="/services#discover-product" className="btn">
+           <div
+                         className="card text-center"
+                         style={{ width: "19rem" }}
+                         id="home-product"
+                       >
+                         <img src={hp4} className="card-img-top" alt="..." />
+                         <div className="card-body">
+                           <h5 className="card-title">LPG Semi Trailer Truck</h5>
+                           <p className="card-text">
+                           All safety aspects are ensured. Semi trailer tanks meet high industry standards for safe, efficient operation.
+                           </p>
+                           <Link to="/services#discover-product" className="btn">
                   EXPLORE
                 </Link>
-              </div>
-            </div>
+                         </div>
+                       </div>
           </div>
         </div>
         {/* products  */}

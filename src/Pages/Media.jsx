@@ -8,17 +8,21 @@ import { RiArrowRightWideFill } from "react-icons/ri";
 
 // img
 import certificates from "../assets/images/certificates.jpg";
+import a1 from "../assets/images/a1.png";
+import a2 from "../assets/images/a2.png";
+import a3 from "../assets/images/a4.png";
+import a4 from "../assets/images/a5.png";
 
 // component
 import Header from "../Component/Header";
 import Footer from "../Component/Footer";
-import Counter from '../Component/Counter';
-import Client_Slider from '../Component/Client_Slider';
+import Counter from "../Component/Counter";
+import Client_Slider from "../Component/Client_Slider";
 
 function Media() {
   return (
     <div>
-      <Header/>
+      <Header />
       {/* hero section  */}
       <div className="container-fulid">
         <div className="row">
@@ -40,7 +44,7 @@ function Media() {
       <div className="container">
         {/* heading  */}
         <div className="row" data-aos="fade-up">
-          <div className="heading col-lg-12" >
+          <div className="heading col-lg-12">
             <h1>
               Award-Winning <br /> Gas Solutions
             </h1>
@@ -72,27 +76,41 @@ function Media() {
                     data-bs-parent="#accordionExample"
                   >
                     <div className="accordion-body">
-                      <div className="card mb-4" style={{ width: "auto" , height:"auto "}}>
+                      <div
+                        className="card mb-4"
+                        style={{ width: "auto", height: "auto " }}
+                      >
                         <div className="row g-0">
                           <div className="col-md-3">
                             <img
                               src={certificates}
                               className="img-fluid rounded-start text-center border-end"
                               alt="..."
-                              width={'300px'}
+                              width={"300px"}
                             />
                           </div>
                           <div className="col-md-8">
                             <div className="card-body p-5">
-                              <h3 className="card-title"  style={{color:"#9b070e"}}>ISO 9001 :2015</h3>
-                              <p className="card-text" style={{color: "rgb(47, 47, 47)"}}>
+                              <h3
+                                className="card-title"
+                                style={{ color: "#9b070e" }}
+                              >
+                                ISO 9001 :2015
+                              </h3>
+                              <p
+                                className="card-text"
+                                style={{ color: "rgb(47, 47, 47)" }}
+                              >
                                 This certificate states that the management
                                 system of Trinity Engi-Tech, a company dealing
                                 with the manufacturing and installation of gas
                                 tanks and vaporizers, is certified to meet the
                                 requirements of ISO 9001: 2015.
                               </p>
-                              <p className="card-text"  style={{color: "rgb(47, 47, 47)"}}>
+                              <p
+                                className="card-text"
+                                style={{ color: "rgb(47, 47, 47)" }}
+                              >
                                 The certificate is issued by ICV Assessments
                                 Pvt. Ltd. <br />
                                 <br />
@@ -123,96 +141,62 @@ function Media() {
                       Awards
                     </button>
                   </h2>
-                  <div
-                    id="collapseTwo"
-                    className="accordion-collapse collapse"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div className="accordion-body d-flex flex-wrap justify-content-between">
-                      <div className="row row-cols-1 row-cols-md-3 g-4 mt-5">
-                       
-                       
-                        {/* 1 */}
-                        <div
-                          className="card m-2"
-                          style={{ width: "300px", height: "450px" }}
-                        >
-                          <img
-                            src="https://trigas.co.in/wp-content/uploads/2024/07/1.jpg.webp"
-                            className="card-img-top"
-                            alt="..."
-                            height={"350px"}
-                          />
-                          <div className="card-body text-center">
-                            <h5 className="card-title fs-6" style={{color:"#1f284e"}}>
-                            Safety awareness programme(SAP2023)
-                            </h5>
-                          </div>
-                        </div>
-                        
-                        {/* 2 */}
-                        <div
-                          className="card m-2"
-                          style={{ width: "300px", height: "450px" }}
-                        >
-                          <img
-                            src="https://trigas.co.in/wp-content/uploads/2024/07/2.jpg.webp"
-                            className="card-img-top"
-                            alt="..."
-                            height={"350px"}
-                          />
-                          <div className="card-body text-center">
-                            <h5 className="card-title fs-6" style={{color:"#1f284e"}}>
-                            BEST BUSSINESS ASSOCIATE – 2019 INDIAN OIL CORPORATION LIMITE
-                            </h5>
-                          </div>
-                        </div>
-                           {/* 3 */}
-                           <div
-                          className="card m-2"
-                          style={{ width: "300px", height: "450px" }}
-                        >
-                          <img
-                            src="https://trigas.co.in/wp-content/uploads/2024/07/4.jpg.webp"
-                            className="card-img-top"
-                            alt="..."
-                            height={"350px"}
-                          />
-                          <div className="card-body text-center">
-                            <h5 className="card-title fs-6" style={{color:"#1f284e"}}>
-                            Indian oil corporation Limited 2023
-                            </h5>
-                          </div>
-                        </div>
-                        {/* 4*/}
-                        <div
-                          className="card m-2"
-                          style={{ width: "300px", height: "450px" }}
-                        >
-                          <img
-                            src="https://trigas.co.in/wp-content/uploads/2024/07/5.jpg.webp"
-                            className="card-img-top"
-                            alt="..."
-                            height={"350px"}
-                          />
-                          <div className="card-body text-center">
-                            <h5 className="card-title fs-6" style={{color:"#1f284e"}}>
-                            Highest Bulk LPG Sales -220046 MT in FY 2023 -24
-                            </h5>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+
+                <div
+  id="collapseTwo"
+  className="accordion-collapse collapse"
+  data-bs-parent="#accordionExample"
+>
+  <div className="accordion-body p-0">
+    <div className="row justify-content-center g-3 m-0">
+      {[a1, a2, a3, a4].map((imgSrc, idx) => (
+        <div
+          key={idx}
+          className="col-lg-3 col-md-4 col-sm-6 mb-4 d-flex justify-content-center"
+        
+        >
+          <div
+                      className="award-item shadow rounded text-center p-3 w-100"
+                      style={{
+                        maxWidth: "280px",
+                        height: "100%",
+                        border: "1px solid #ccc",
+                      }}
+                    >
+            <img
+              src={imgSrc}
+              className="img-fluid"
+              alt="..."
+              style={{ height: "200px", objectFit: "contain" }}
+            />
+            <div className="text-center">
+              <h5 className="fs-6" style={{ color: "#1f284e" }}>
+                {
+                  [
+                    "Safety awareness programme (SAP2023)",
+                    "Best Business Associate - 2019 Indian Oil Corporation Limited",
+                    "Indian Oil Corporation Limited 2023",
+                    "Highest Bulk LPG Sales - 220046 MT in FY 2023-24"
+                  ][idx]
+                }
+              </h5>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <Client_Slider/>
-        <Counter/>
+        <Client_Slider />
+        <Counter />
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
