@@ -9,16 +9,32 @@
 
 /* hero section--------------------------------------------------------------------------------------------------------  */
 .hero_bg {
-  background-image: url("/herobg.JPG");
-  margin: auto;
+  position: relative;
+  background-image: url("/herobg1.JPG");
+  /* margin: auto; */
+  width: 100%;
   height: 450px;
-  background-size: cover;
+  background-size:cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   margin-bottom: 50px;
-  /* opacity: 0.5; */
+  z-index: 1;
+  /* overflow: hidden; */
+}
+.hero_bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5; /* adjust this for stronger/weaker overlay */
+  z-index: 2;
 }
 .hero_container {
+  position: relative;     /* Required for z-index to work */
+  z-index: 3;  
   background-color:#2B376B ;
   width: 30%;
   margin: auto;
